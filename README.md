@@ -2,7 +2,7 @@
 File IO Cloud Based on mongoDB+nodejs+vue
 
 > MangooDB+Node+Express+Vue
-
+可在私有服务器上挂载的文件读写简单应用（事例中主要用于mindjs脑图数据的存储和读写）
 由node监听一个端口同时挂载前端和后端的服务应用。
 
 ```markdown
