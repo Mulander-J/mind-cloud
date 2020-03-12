@@ -1,0 +1,46 @@
+body {
+  padding: 0;
+  margin: 0;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+.page{
+  width: 100%;
+  height: 100%;
+  --navHeight:50px;
+  --centerHeight:calc(var(--navHeight)*2)
+}
+.header,.footer{
+  width: 100%;
+  height: var(--navHeight);
+  line-height: var(--navHeight);
+  text-align: center;
+  background: #2292cf;
+  color:#fff;
+  position: fixed;
+}
+.header{
+  top:0
+}
+.footer{
+  bottom:0
+}
+.center{
+  width: 100%;
+  padding-top: var(--navHeight);
+  height: calc(100% - var(--centerHeight));
+  display: flex;
+  justify-content: center;
+  overflow: auto;
+}
+.api-type,.api-url,.api-name{
+  font-weight: bolder;
+}
+.api-type{
+  color:#2292cf;
+}
+.api-url{
+  color:red;
+}
+.api-name{
+  color:#2292cf;
+}
