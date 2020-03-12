@@ -1,0 +1,24 @@
+<link href="/stylesheets/style.css" rel="stylesheet">
+<div class="page">
+  <% include ./layout/header.ejs %>
+  <div class="center">
+    <div>
+      <h1>IO-Cloud-BackEnd</h1>
+      <h2>Address_http://localhost:3000</h2>
+      <% for(var j=0;j<data.length;j++){%>
+        <h3><%= data[j].name%></h3>
+        <ul>
+          <% for(var i=0;i<data[j].children.length;i++){%>
+            <li>
+              <b class="api-name"> <%= data[j].children[i].name %> </b>
+              <span class="api-url"> <%= data[j].children[i].url %></span>
+              <sup class="api-type"><%= data[j].children[i].type %></sup>
+              <p>参数:   <%= data[j].children[i].param %> </p>
+            </li>
+          <% }%>
+        </ul>
+      <% }%>
+    </div>
+  </div>
+  <% include ./layout/footer.ejs %>
+</div>
